@@ -1,10 +1,8 @@
-Select * From kdrama_actor
-;
 
 'Data Exploration of the top 250 kdrama dataset'
 'Hypothesis: The Highest rated shows are determined by the types and amounts of audience the show garners'
 'Goals to figure out with this dataset:
-Do Actors who are present in a higher than average amount of shows affect the ratings?
+Do Actors who are present in a higher-than-average amount of shows affect the ratings?
 What is the most popular show for this current data set?
 What is the most popular genre?
 What is the least popular genre and how could it be improved?
@@ -14,7 +12,7 @@ Are the show ratings affected by the show length and season length?'
 'What directors and screenwriters have the most shows on this list?'
 
 'Do Actors who are present in a higher than average amount of shows affect the ratings?'
-'Lets count the total amount of Actors in the this data set'
+'Lets count the total amount of Actors in this data set'
 
 Select COUNT(distinct(Actor)) as Total_Actors
 From kdrama_actor
@@ -171,7 +169,7 @@ Order by num_shows desc
 
 'After analyzing the metrics for the directors, it is noticable that most of the directors with high average ratings
 have directed very few shows which is why their average is high in these calculations. Whereas the directors
-who have done more shows that are in this list have a bit lower ratings. The show It\'s Okay, That\'s Friendship 
+who have done more shows that are on this list have a bit lower ratings. The show It\'s Okay, That\'s Friendship 
 was removed from the analysis because not only is it just a short 1 episode special, but there were not any directors and screenwriters
 for the episode
 
